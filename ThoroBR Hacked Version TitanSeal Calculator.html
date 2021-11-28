@@ -2,7 +2,7 @@
 <html class=ingameBar--is-delivered>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width, user-scalable=0">
-<title>Diablo II Ressucted Calculator</title>
+<title>Diablo II Resucted Calculator</title>
 <style>
   .ingame {
     color: #cd0d01
@@ -1079,7 +1079,7 @@
               <div class="row pr z1">
                 <div class=col-16>
                   <article class="item box cf">
-                    <h1>Diablo II Ressurected Attack Speed Calculator</h1>
+                    <h1>Diablo II Resurected Attack Speed Calculator</h1>
                     <script>
 var frames;
 var start;
@@ -1437,7 +1437,7 @@ function berechneBreakpoints(event) {
         }
         temp1 = 0;
         if (((fertigkeiten[document.myform.skill.value][2] == 0) || (fertigkeiten[document.myform.skill.value][2] == 2) || (fertigkeiten[document.myform.skill.value][2] == 3) || (fertigkeiten[document.myform.skill.value][2] == 4) || (fertigkeiten[document.myform.skill.value][2] == 5)) && (fertigkeiten[document.myform.skill.value][4] == 100)) {
-            for (i = Math.max(100 + SIAS - WSMprimaer, 15); i <= 1759; i++) {
+            for (i = Math.max(100 + SIAS - WSMprimaer, 15); i <= 300; i++) {
                 ergebnis = berechneFPA(frames, i, start);
                 if ((temp1 != ergebnis) && (i - 100 - SIAS + WSMprimaer < 120)) {
                     breakpoints[breakpoints.length] = [Math.ceil(120 * (i - 100 - SIAS + WSMprimaer) / (120 - (i - 100 - SIAS + WSMprimaer))), ergebnis];
@@ -1446,7 +1446,7 @@ function berechneBreakpoints(event) {
             }
         }
         if ((fertigkeiten[document.myform.skill.value][2] == 1) && (document.myform.zweitwaffe.value == 0) && (fertigkeiten[document.myform.skill.value][4] == 100)) {
-            for (i = Math.max(100 + SIAS - WSMprimaer, 15); i <= 1759; i++) {
+            for (i = Math.max(100 + SIAS - WSMprimaer, 15); i <= 300; i++) {
                 frames = waffengattung[waffen[document.myform.waffe.value][2]][document.myform.char.value][0];
                 if ((waffen[document.myform.waffe.value][2] == 3) && (document.myform.barbschwert.value == 1)) {
                     frames = 16;
@@ -1470,7 +1470,7 @@ function berechneBreakpoints(event) {
             }
         }
         if ((fertigkeiten[document.myform.skill.value][2] == 1) && (document.myform.zweitwaffe.value > 0) && (fertigkeiten[document.myform.skill.value][4] == 100)) {
-            for (i = Math.max(100 + SIAS - WSMprimaer, 15); i <= 1759; i++) {
+            for (i = Math.max(100 + SIAS - WSMprimaer, 15); i <= 300; i++) {
                 frames = waffengattung[waffen[document.myform.waffe.value][2]][document.myform.char.value][0];
                 if ((waffen[document.myform.waffe.value][2] == 3) && (document.myform.barbschwert.value == 1)) {
                     frames = 16;
@@ -1498,7 +1498,7 @@ function berechneBreakpoints(event) {
                 }
             }
             temp1 = 0;
-            for (i = Math.max(100 + SIAS - WSMsekundaer, 15); i <= 1759; i++) {
+            for (i = Math.max(100 + SIAS - WSMsekundaer, 15); i <= 300; i++) {
                 ergebnis = berechneFPA(12, i, 0);
                 if ((temp1 != ergebnis) && (i - 100 - SIAS + WSMsekundaer < 120)) {
                     breakpoints2[breakpoints2.length] = [Math.ceil(120 * (i - 100 - SIAS + WSMsekundaer) / (120 - (i - 100 - SIAS + WSMsekundaer))) - IASsekundaer, ergebnis];
@@ -1532,7 +1532,7 @@ function berechneBreakpoints(event) {
             }
         }
         if ((fertigkeiten[document.myform.skill.value][2] == 7) && (document.myform.skill.value != 19)) {
-            for (i = Math.max(100 + SIAS - WSMprimaer, 15); i <= 1759; i++) {
+            for (i = Math.max(100 + SIAS - WSMprimaer, 15); i <= 300; i++) {
                 ergebnis = berechneFPA(frames, i, 0);
                 ergebnis++;
                 if ((document.myform.skill.value == 3) && (document.myform.char.value < 7)) {
@@ -1554,7 +1554,7 @@ function berechneBreakpoints(event) {
             }
         }
         if (document.myform.skill.value == 19) {
-            for (i = 100 + IASprimaer - OIAS - WSMprimaer; i <= 1759; i++) {
+            for (i = 100 + IASprimaer - OIAS - WSMprimaer; i <= 300; i++) {
                 var temp = berechneFPA(frames, i, 0);
                 ergebnis = wirbelwind(temp);
                 if (temp1 != ergebnis) {
@@ -1564,7 +1564,7 @@ function berechneBreakpoints(event) {
             }
         }
         if (fertigkeiten[document.myform.skill.value][4] == 0) {
-            for (i = Math.max(100 + SIAS - WSMprimaer, 15); i <= 1759; i++) {
+            for (i = Math.max(100 + SIAS - WSMprimaer, 15); i <= 300; i++) {
                 if (document.myform.skill.value == 14) {
                     frames = 4;
                 }
@@ -1599,7 +1599,7 @@ function berechneBreakpoints(event) {
             }
         }
         if (fertigkeiten[document.myform.skill.value][4] == 50) {
-            for (i = Math.max(100 + SIAS - WSMprimaer, 15); i <= 1759; i++) {
+            for (i = Math.max(100 + SIAS - WSMprimaer, 15); i <= 300; i++) {
                 frames = aktionsframe[waffen[document.myform.waffe.value][2]][document.myform.char.value];
                 rollback1 = berechneFPA(frames, i, start);
                 rollback1++;
@@ -1628,7 +1628,7 @@ function berechneBreakpoints(event) {
             }
         }
         if (fertigkeiten[document.myform.skill.value][4] == 40) {
-            for (i = Math.max(100 + SIAS - WSMprimaer, 15); i <= 1759; i++) {
+            for (i = Math.max(100 + SIAS - WSMprimaer, 15); i <= 300; i++) {
                 frames = aktionsframe[waffen[document.myform.waffe.value][2]][document.myform.char.value];
                 rollback1 = berechneFPA(frames, i, start);
                 rollback1++;
@@ -3253,7 +3253,7 @@ var waffen = [
    </form>
    <script>neuChar(document.myform);</script>
 <tr><p>The bug of Auto-Wsm is a way to lower the ias needed with dual weapons, only select if you know how to use the bug</p>
-<i>Credits to ingame.de for the calc, ryuuguu for remove the ias cap, Warren code for fury skill fix, and for compiling updated info about D2R, ThoroBR.</i></tr>
+<i>Credits to ingame.de for the calc, ryuuguu for remove the ias cap, Warren code for some fixed skills, and for compiling updated info about D2R, ThoroBR.</i></tr>
                   </article>
                 </div>
               </div>
